@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+margin_top = 0.487396
+margin_right = 40.0
+margin_bottom = 40.4874
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 313.883
+margin_top = 379.513
+margin_right = 441.883
+margin_bottom = 399.513
+rect_scale = Vector2( 3, 3 )
+text = "Calcular promedio"
+
+[node name="LabelArray" type="Label" parent="."]
+margin_top = 70.0
+margin_right = 255.0
+margin_bottom = 84.0
+rect_scale = Vector2( 4, 4 )
+text = "0"
+align = 1
+
+[node name="LabelPromedio" type="Label" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -40.0
+margin_top = 110.0
+margin_right = 215.0
+margin_bottom = 124.0
+rect_scale = Vector2( 4, 4 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 403.564
+margin_top = 225.665
+margin_right = 461.564
+margin_bottom = 249.665
+rect_scale = Vector2( 3, 3 )
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
